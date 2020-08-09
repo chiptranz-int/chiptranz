@@ -1,0 +1,36 @@
+<?php
+
+namespace App\Http\Controllers\Api;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Password;
+
+class ApiForgotPasswordController extends Controller
+{
+    //
+    use SendsPasswordResetEmails;
+    public function __construct()
+    {
+        $this->middleware('guest');
+    }
+
+
+
+    public function sendResetLinkEmail(Request $request)
+    {
+        $this->validateEmail($request);
+
+        // We will send the password reset link to this user. Once we have attempted
+        // to send the link, we will examine the response then see the message we
+        // need to show to the user. Finally, we'll send out a proper response.
+        $response = $this->broker()->sendResetLink(
+            $this->credentials($request)
+        );
+
+        return $response == Password::RESET_LINK_SENT
+            ? response()->json(['success'=>true,'message'=>trans($response)],200)
+            : response()->json(['success'=>false, 'message'=>trans($response)],402);
+    }
+}

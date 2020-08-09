@@ -1,0 +1,111 @@
+.fusion-page-title-bar {
+    clear: both;
+    padding: 0 10px;
+    height: 87px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-color: #f6f6f6;
+    border-top: 1px solid #d2d3d4;
+    border-bottom: 1px solid #d2d3d4;
+}
+
+.fusion-page-title-bar.faq {
+    background-image: url(/chip-assets/images/you-bg/you_bg.jpg);
+    --page_title_bg: url(/chip-assets/images/you-bg/you_bg.jpg);
+    --page_title_bg_retina: url(/chip-assets/images/you-bg/you_bg-1.jpg);
+}
+.fusion-page-title-bar.about {
+    background-image: url(/chip-assets/images/about/about.jpg);
+    --page_title_bg: url(/chip-assets/images/about/about.jpg);
+    --page_title_bg_retina: url(/chip-assets/images/about/about-1.jpg);
+}
+.fusion-page-title-bar.solution {
+    background-image: url(/chip-assets/images/create-bg/create_bg.jpg);
+    --page_title_bg: url(/chip-assets/images/create-bg/create_bg.jpg);
+    --page_title_bg_retina: url(/chip-assets/images/create-bg/create_bg-1.jpg);
+}
+.fusion-page-title-bar.privacy {
+    background-image: url(/chip-assets/images/privacy/privacy_bg.jpg);
+    --page_title_bg: url(/chip-assets/images/privacy/privacy_bg.jpg);
+    --page_title_bg_retina: url(/chip-assets/images/privacy/privacy_bg-1.jpg);
+}
+
+.fusion-page-title-bar {
+    height: 310px;
+
+    background-color: #1b2032;
+    border-color: rgba(28,33,45,0);
+    background-size: auto;
+}
+.fusion-page-title-bar {
+    border: none;
+    --page_title_height: 310px;
+    --page_title_mobile_height: 160px;
+    --page_title_bg_color: #1b2032;
+    --page_title_border_color: rgba(28,33,45,0);
+    --page_title_font_size: 60px;
+
+    --page_title_color: #ffffff;
+    --page_title_subheader_font_size: 18px;
+    --page_title_subheader_color: rgba(255,255,255,0.8);
+
+    --breadcrumbs_font_size: 12px;
+    --breadcrumbs_text_color: rgba(255,255,255,0.7);
+    --breadcrumbs_text_hover_color: #ffffff;
+    padding-top: 110px;
+    padding-left: 60px !important;
+}
+
+.avada-has-pagetitle-bg-full .fusion-page-title-bar {
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1000px){
+
+
+    .fusion-body .fusion-page-title-bar {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+    }
+}
+.avada-has-pagetitle-bg-full .fusion-page-title-bar {
+    background-size: cover;
+}
+.fusion-title-size-one, h1 {
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+h1.entry-title {
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+.fusion-page-title-bar h1, .fusion-page-title-bar h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #343333;
+}
+.fusion-page-title-bar h1 {
+    font-size: 18px;
+}
+
+.fusion-page-title-bar h1 {
+    color: #ffffff;
+}
+.fusion-modal h1, .fusion-page-title-bar h1, .fusion-title h1, .fusion-widget-area h1, .post-content h1, .search-page-search-form h1 {
+    font-family: Poppins, "Arial Black", Gadget, sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -2px;
+    font-style: normal;
+}
+.fusion-page-title-bar .fusion-page-title-row h1 {
+    font-size: 60px;
+
+}
+
